@@ -13,6 +13,6 @@ namespace Kol2_ko_s22852.Services
          public Task<GetAlbum> GetAlbumById(int id);
          public Task<List<GetTrack>> GetTracksByAlbumId(int id);
          public Task<Musician> GetMusicianById(int id);
-         public Task<Boolean> DeleteMusician(int id);
+         public Task<Boolean> DeleteMusician(Musician mus);
     }
 }

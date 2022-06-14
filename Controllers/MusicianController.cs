@@ -17,6 +17,8 @@ namespace Kol2.Controllers
         {
             var mus = await _service.GetMusicianById(id);
             if(mus is null) return BadRequest("Nie ma takiego muzyka");
+            await _service.DeleteMusician(mus);
+            await _service.SaveDatabase();
             return NoContent();
         }
     }

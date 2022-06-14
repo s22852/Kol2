@@ -22,6 +22,11 @@ namespace Kol2_ko_s22852.Services
             throw new System.NotImplementedException();
         }
 
+        public Task<bool> DeleteMusician(Musician mus)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public async Task<GetAlbum> GetAlbumById(int id)
         {
             var album =  await _context.Albums.FirstOrDefaultAsync(e => e.IdAlbum == id);
